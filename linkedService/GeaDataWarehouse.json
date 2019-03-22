@@ -1,0 +1,11 @@
+{
+	"name": "GeaDataWarehouse",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=galaxsoftec-svr-one-dev.database.windows.net;initial catalog=GeaDataWarehouseDb;user id=admin1",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkFERlBFUlNPTkFMREVWXzU0ODE1MTU3LTAxMDgtNDE3Ni1hNzlmLTUzZWU2ODgwNDkzYSINCn0="
+		}
+	}
+}
