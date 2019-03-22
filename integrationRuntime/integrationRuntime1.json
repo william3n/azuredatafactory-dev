@@ -1,0 +1,36 @@
+{
+	"name": "integrationRuntime1",
+	"properties": {
+		"type": "Managed",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "East US",
+				"nodeSize": "Standard_D8_v3",
+				"numberOfNodes": 2,
+				"maxParallelExecutionsPerNode": 1,
+				"vNetProperties": {
+					"vNetId": "/subscriptions/c0fc45ba-27ea-4676-ad92-c170a42bd5e9/resourceGroups/AVirtualMachineDev/providers/Microsoft.Network/virtualNetworks/AVirtualMachineDev-vnet",
+					"subnet": "default"
+				},
+				"dataFlowRuntime": {
+					"computeType": "General",
+					"coreCount": 8,
+					"timeToLiveInMinutes": 60
+				}
+			},
+			"ssisProperties": {
+				"catalogInfo": {
+					"catalogServerEndpoint": "galaxsoftec-svr-one-dev.database.windows.net",
+					"catalogAdminUserName": "admin1",
+					"catalogAdminPassword": {
+						"type": "SecureString",
+						"value": "**********"
+					},
+					"catalogPricingTier": "Basic"
+				},
+				"edition": "Standard",
+				"licenseType": "BasePrice"
+			}
+		}
+	}
+}

@@ -1,0 +1,6 @@
+{
+	"name": "SelfLinkedIntegration",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
