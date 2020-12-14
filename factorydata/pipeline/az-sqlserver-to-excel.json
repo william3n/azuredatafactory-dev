@@ -4,7 +4,7 @@
 		"description": "extract data from Azure SQL Server, transform and load to an excel spreadsheet ",
 		"activities": [
 			{
-				"name": "CopyEmployees",
+				"name": "CopyProduct",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
