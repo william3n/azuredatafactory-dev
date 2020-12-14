@@ -1,0 +1,17 @@
+{
+	"name": "SQLAdventureWorksLT",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "kvpluralsight",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "share-az-connectionString"
+			}
+		}
+	}
+}
