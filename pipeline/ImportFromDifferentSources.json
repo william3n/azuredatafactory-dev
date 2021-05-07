@@ -30,7 +30,7 @@
 					},
 					"sink": {
 						"type": "AzureSqlSink",
-						"preCopyScript": "IF EXISTS(SELECT * FROM INFORMATION_SCHEMA.TABLES where TABLE_NAME = 'MedicareProviderChargeInpatient' AND TABLE_SCHEMA = 'dbo')\n    DROP TABLE [dbo].[MedicareProviderChargeInpatient];\nELSE\n\tCREATE TABLE [dbo].[MedicareProviderChargeInpatient] (\n\t\tDRGDefinition VARCHAR(100),\n\t\tProviderId INT,\n\t\tProviderName VARCHAR(100),\n\t\tProviderStreetAddress VARCHAR(100),\n\t\tProviderCity VARCHAR(50),\n\t\tProviderState VARCHAR(15),\n\t\tProviderZipCode VARCHAR(10),\n\t\tHospitalReferralRegionDescription VARCHAR(100),\n\t\tTotalDischarges VARCHAR(15),\n\t\tAverageCoveredCharges VARCHAR(15),\n\t\tAverageTotalPayments VARCHAR(15),\n\t\tAverageMedicarePayments VARCHAR(15)\n\n    );",
+						"preCopyScript": "IF EXISTS(SELECT * FROM INFORMATION_SCHEMA.TABLES where TABLE_NAME = 'MedicareProviderChargeInpatient' AND TABLE_SCHEMA = 'dbo')\n    DELETE FROM [dbo].[MedicareProviderChargeInpatient];\nELSE\n\tCREATE TABLE [dbo].[MedicareProviderChargeInpatient] (\n\t\tDRGDefinition VARCHAR(100),\n\t\tProviderId INT,\n\t\tProviderName VARCHAR(100),\n\t\tProviderStreetAddress VARCHAR(100),\n\t\tProviderCity VARCHAR(50),\n\t\tProviderState VARCHAR(15),\n\t\tProviderZipCode VARCHAR(10),\n\t\tHospitalReferralRegionDescription VARCHAR(100),\n\t\tTotalDischarges VARCHAR(15),\n\t\tAverageCoveredCharges VARCHAR(15),\n\t\tAverageTotalPayments VARCHAR(15),\n\t\tAverageMedicarePayments VARCHAR(15)\n\n    );",
 						"disableMetricsCollection": false
 					},
 					"enableStaging": false,
