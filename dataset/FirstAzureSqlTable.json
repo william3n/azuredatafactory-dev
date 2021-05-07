@@ -1,0 +1,12 @@
+{
+	"name": "FirstAzureSqlTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ETLSqlDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}
