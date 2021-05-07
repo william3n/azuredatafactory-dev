@@ -26,6 +26,7 @@
 					},
 					"sink": {
 						"type": "AzureSqlSink",
+						"preCopyScript": "DROP TABLE [IF EXISTS] [dbo].[MedicareProviderChargeInpatient]\nIF NOT EXISTS (SELECT * FROM sysobjects WHERE name='[dbo].[MedicareProviderChargeInpatient]' and xtype='U')\n    CREATE TABLE [dbo].[MedicareProviderChargeInpatient] (\n        Name varchar(64) not null\n    )\nGO",
 						"disableMetricsCollection": false
 					},
 					"enableStaging": false,
