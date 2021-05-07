@@ -1,0 +1,7 @@
+{
+	"name": "ImportFromDifferentSources",
+	"properties": {
+		"description": "in this pipeline, I will import data from different sources into Azure SQL",
+		"annotations": []
+	}
+}
