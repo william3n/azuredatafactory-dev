@@ -17,11 +17,15 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "ExcelSource",
+						"type": "DelimitedTextSource",
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
 							"recursive": true,
 							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings",
+							"skipLineCount": 1
 						}
 					},
 					"sink": {
@@ -41,7 +45,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "MedicareProviderChargeInpatient",
+						"referenceName": "MedicareProviderChargeInpatientCSV",
 						"type": "DatasetReference"
 					}
 				],
